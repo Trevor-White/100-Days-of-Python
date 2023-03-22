@@ -1,5 +1,6 @@
 import random
 from listofwords import list_of_words
+from hangmanart import HANGMANPICS
 
 
 # Create a function to convert lists to strings
@@ -8,66 +9,6 @@ def convert(list):
     for letter in list:
         word += " " + letter
     return word
-
-
-HANGMANPICS = [
-    """
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========""",
-    """
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========""",
-]
 
 
 # List of possible words
