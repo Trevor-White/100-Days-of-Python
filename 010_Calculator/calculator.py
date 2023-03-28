@@ -1,29 +1,14 @@
-print("Hello")
+from calcfuncs import add, subtract, mutiply, divide
 
-
-def add(a, b):
-    return a + b
-
-
-def subtract(a, b):
-    return a - b
-
-
-def mutiply(a, b):
-    return a * b
-
-
-def divide(a, b):
-    return a / b
-
-
+# Create dictionary mapping the symbols to the functions
 operations = {"+": add, "-": subtract, "*": mutiply, "/": divide}
 
-
+# create varaibles
 cont = "y"
 first_number = ""
 answer = 0
 
+# Main function
 while cont == "y":
     if first_number == "":
         first_number = float(input("What is the first number?: "))

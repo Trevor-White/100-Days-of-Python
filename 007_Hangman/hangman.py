@@ -36,7 +36,6 @@ while "_" in current_state:
     if len(guess) > 1:
         print("\nPlease guess only 1 letter at a time")
         change_flag = True
-        pass
 
     for count, value in enumerate(list_of_letters):
         if guess == value:
