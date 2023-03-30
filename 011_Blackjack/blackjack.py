@@ -130,6 +130,7 @@ player_hand_value = hand_value(player_hand)
 sleep(1)
 
 print(f"CPU has {cpu_hand_value} | You have {player_hand_value}")
+print(LINE)
 
 sleep(1)
 
