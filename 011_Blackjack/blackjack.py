@@ -1,5 +1,4 @@
-from deck import deck, deal_card
-import random
+from deck import deal_card
 from time import sleep
 
 LINE = "--------------------"
@@ -116,7 +115,7 @@ print(f"CPU Hand: {show_player_hand(cpu_hand)}\n")
 sleep(1)
 
 while hand_value(cpu_hand) < 17:
-    print(f"CPU hits")
+    print("CPU hits")
     cpu_hand.append(deal_card())
     sleep(1)
     if hand_value(cpu_hand) > 21:
